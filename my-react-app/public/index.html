@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha Madhuri Website</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #0b0a0a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .content {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <br></br>
+    <h1>BUILD</h1>
+    <h1>A VARIABLE</h1>
+    <h1>LAB BENCH</h1>
+    <h1>POWER SUPPLY</h1>
+    <h1>USER GUIDE</h1>
+    <br></br>
+  </header>
+
+  <div id="root" class="container">
+    <!-- React content will be rendered here -->
+  </div>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    // React component
+    function App() {
+      return (
+        <div className="content">
+          <h2>Welcome to React</h2>
+          <p>This is a simple React website.</p>
+        </div>
+      );
+    }
+
+    // Render the App component into the root element
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+
+</body>
+</html>
